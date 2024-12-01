@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.1.7//EN"
+        "http://struts.apache.org/dtds/struts-2.1.7.dtd">
+<struts>
+<!--文件上传-->
+    <package name="upload" extends="struts-default">
+        <action name="UploadFile" class="com.viewkm.UploadFile">
+            <result name="result">/message.jsp</result>
+            <param name="uploadPath">D:\upload\</param>
+        </action>
+    </package>
+    
+    <package name="kmeans" extends="json-default">
+    	<action name="kmeansCluster" class="com.viewkm.KmeansAction" method="kmeansCluster">
+    		<result type="json" name="success">
+			   <param name="includeProperties">jOption</param>
+			</result>
+    	</action>
+    </package>
+</struts>
