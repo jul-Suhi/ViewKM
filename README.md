@@ -1,0 +1,1 @@
+采用java语言实现，页面开发使用html、jsp和css技术等，运用的框架为struts2，使用weka3.8实现数据处理，数据可视化工具为echarts3， web应用服务器为Tomcat7.0。开发出一个文件上传、k-means聚类算法、DBscan聚类算法处理数据及可视化处理后的数据的系统。
